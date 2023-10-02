@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo-ADO</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: rgb(70, 4, 90);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        #container {
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(255, 255, 255, 0.187);
+            width: 60vh;
+            min-height: 80vh;
+            color: #fff;
+            border-radius: 4px;
+            padding: 20px;
+            text-align: center;
+        }
+        .img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        img {
+            border-radius: 4px;
+            width: 250px;
+            height: 300px;
+        }
+        p {
+            margin-top: 1vh;
+            color: #fff;
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+        h1 {
+            margin-top: 1vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="img">
+            <img src="https://avatars.githubusercontent.com/u/102376831?v=4"style="width:250px; height:300px"/>       
+        </div>
+            <h1 th:text="${Nome}"></h1>
+            <p th:text="${Tel}"></p>
+            <p th:text="${Email}"></p>
+            <p th:text="${DataNasc}"></p>
+            <a href="https://github.com/NathaliadaRocha07"><p th:text="${Github}"> </p></a>
+            <a href="https://www.linkedin.com/in/nathalia-da-rocha-santos-19a052237/"><p th:text="${Linkedin}"></p></a>
+            <p th:text="${Curso}"></p>
+            <p th:text="${Habilidade}"></p>
+            
+   </div>       
+</body>
+</html>
